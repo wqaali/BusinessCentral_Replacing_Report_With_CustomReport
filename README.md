@@ -5,7 +5,6 @@ new customized report and wanted to open that in repalcemnt of standard one.
 In this small project I have done the same.
 This example is not very good as standard but purpose is to show how you can replace standard report with other.
 In this example if user click on customer list report then backend programe chanage detect and replaced customer report with purchase invoice.
-Code is 
 
 codeunit 50103 "Replace Base Report"
 {
@@ -17,3 +16,4 @@ codeunit 50103 "Replace Base Report"
             NewReportId := Report::"Purchase - Invoice";
     end;
 }
+
