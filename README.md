@@ -8,6 +8,7 @@ In this example if user click on customer list report then backend programe chan
 
 codeunit 50103 "Replace Base Report"
 {
+
     [EventSubscriber(ObjectType::Codeunit, Codeunit::ReportManagement, 'OnAfterSubstituteReport', '', false, false)]
     local procedure OnAfterSubstituteReport(ReportId: Integer; var NewReportId: Integer)
     begin
@@ -15,5 +16,6 @@ codeunit 50103 "Replace Base Report"
         then
             NewReportId := Report::"Purchase - Invoice";
     end;
+    
 }
 
